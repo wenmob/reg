@@ -7,8 +7,8 @@ export const numOnly = Vue.directive('numberOnly', {
     }
     el.addEventListener('input', el.handler)
   },
-  unbind: () => {
-    this.el.removeEventListener('input', this.handler)
+  unbind: (el) => {
+    el.removeEventListener('input', el.handler)
   }
 })
 
@@ -38,8 +38,8 @@ export const money = Vue.directive('moneyOnly', {
     }
     el.addEventListener('input', el.handler)
   },
-  unbind: () => {
-    this.el.removeEventListener('input', this.handler)
+  unbind: (el) => {
+    el.removeEventListener('input', el.handler)
   }
 })
 
@@ -58,8 +58,8 @@ export const phoneOnly = Vue.directive('phoneOnly', {
     }
     el.addEventListener('input', el.handler)
   },
-  unbind: () => {
-    this.el.removeEventListener('input', this.handler)
+  unbind: (el) => {
+    el.removeEventListener('input', el.handler)
   }
 })
 
@@ -73,8 +73,8 @@ export const bankOnly = Vue.directive('bankOnly', {
     }
     el.addEventListener('input', el.handler)
   },
-  unbind: () => {
-    this.el.removeEventListener('input', this.handler)
+  unbind: (el) => {
+    el.removeEventListener('input', el.handler)
   }
 })
 
@@ -91,7 +91,7 @@ export const pnInt = Vue.directive('pnInt', {
     }
     el.addEventListener('input', el.handler)
   },
-  unbind: () => {
-    this.el.removeEventListener('input', this.handler)
+  unbind: (el) => {
+    el.removeEventListener('input', el.handler)
   }
 })
